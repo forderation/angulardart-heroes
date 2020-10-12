@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<nav>
+    <!-- routeLinkActive to style <a/> element when route active  -->
+    <a [routerLink]="RoutePaths.dashboard.toUrl()" [routerLinkActive]="'active'">Dashboard</a>
+    <a [routerLink]="RoutePaths.heroes.toUrl()" [routerLinkActive]="'active'">Heroes</a>
+</nav>
+<!--place holder component for some route -->
+<router-outlet [routes]="Routes.all"></router-outlet>
